@@ -5,3 +5,11 @@ layout: default
 <h1>homepage</h1>
 
   {{ content }}
+
+{%- for post in site.posts -%}
+
+{{ post.title }}
+
+{{ post.content }}
+
+{%- endfor -%}
